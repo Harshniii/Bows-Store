@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.MainBox
+{
+    background: url("file:///C:/Users/Aareh/Downloads/DALL%C2%B7E%202025-02-08%2001.41.05%20-%20Aesthetic%20illustration%20of%20a%20girl%20sitting%20in%20a%20lush%20garden,%20wearing%20a%20delicate%20bow%20in%20her%20hair.%20The%20girl%20is%20shown%20in%20a%20side%20profile,%20gazing%20peacefully%20.webp");
+    height: 100vh;
+    background-size: cover;
+}
+
+.MenuButton i
+{
+    color: #2A004E;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+
+.MenuBar
+{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255,255,255,1);
+    transition: all 0.3s linear;
+}
+
+.MenuBar .Logo
+{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+}
+
+.MenuBar .Logo a
+{
+    position: absolute;
+    left: 50px;
+    color: #A64D79;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.MenuBar .Menu
+{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.MenuBar .CrossButton i
+{
+    color: #A64D79;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 255px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.MenuBar .Menu
+{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.MenuBar .Menu li
+{
+    margin-top: 16px;
+    padding: 10px 20px;
+}
+
+.MenuBar .Menu i,a
+{
+    color: #A64D79;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.MenuBar .Menu i
+{
+    padding-right: 8px;
+}
+
+.MenuBar .Socialmedia
+{
+    position: absolute;
+    left: 25%;
+    bottom: 130px;
+}
+
+.MenuBar .Socialmedia i
+{
+    color: #A64D79;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+#check
+{
+    display: none;
+}
+
+.MenuBar .Menu li:hover
+{
+     box-shadow: 0 0 4px rgba(140,59,59,0.5);
+}
+
+.MenuButton i:hover
+{
+    font-size: 35px;
+}
+
+.CrossButton i:hover
+{
+    font-size:35px;
+}
+
+.MenuBar .Socialmedia i:hover
+{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+#check:checked ~ .MenuBar
+{
+   left: 0;
+}
+
+#check:checked ~ .MenuButton i
+{
+    opacity: 0;
+}
+
+#check:checked ~ .MenuBar.CrossButton i
+{
+    opacity: 1;
+}
