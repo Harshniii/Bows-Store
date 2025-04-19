@@ -1,4 +1,4 @@
-### 🎀 Bows Store  
+## 🎀 Bows Store  
 
 Bows Store is a simple website for a hair bows shop, built using HTML and CSS.  
 
